@@ -1,0 +1,92 @@
+
+{
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "title": "Find the National Portal of India",
+      "description": "Identify the official National Portal of India and return its name and URL.",
+      "category": "service_discovery",
+      "start_url": "https://www.india.gov.in/",
+      "instructions": [
+        "Open the National Portal of India",
+        "Identify the portal name",
+        "Return the official website URL"
+      ],
+      "expected_outcome": {
+        "type": "information_found",
+        "required_fields": [
+          "service_name",
+          "service_url"
+        ]
+      },
+      "verification": {
+        "type": "required_fields",
+        "criteria": [
+          "service_name",
+          "service_url",
+          "official_source"
+        ]
+      }
+    },
+    {
+      "id": "TASK-002",
+      "title": "Find government schemes",
+      "description": "Open the official MyScheme portal and identify its purpose.",
+      "category": "scheme_discovery",
+      "start_url": "https://www.myscheme.gov.in/",
+      "instructions": [
+        "Open the MyScheme portal",
+        "Identify the portal name",
+        "Summarize what citizens can use the portal for",
+        "Return the official website URL"
+      ],
+      "expected_outcome": {
+        "type": "information_found",
+        "required_fields": [
+          "service_name",
+          "service_purpose",
+          "service_url"
+        ]
+      },
+      "verification": {
+        "type": "required_fields",
+        "criteria": [
+          "service_name",
+          "service_purpose",
+          "service_url",
+          "official_source"
+        ]
+      }
+    },
+    {
+      "id": "TASK-003",
+      "title": "Find Aadhaar information",
+      "description": "Locate the official UIDAI website and identify its role.",
+      "category": "information_discovery",
+      "start_url": "https://uidai.gov.in/",
+      "instructions": [
+        "Open the UIDAI website",
+        "Identify the organization name",
+        "Summarize its role in Aadhaar services",
+        "Return the official website URL"
+      ],
+      "expected_outcome": {
+        "type": "information_found",
+        "required_fields": [
+          "organization_name",
+          "organization_purpose",
+          "service_url"
+        ]
+      },
+      "verification": {
+        "type": "required_fields",
+        "criteria": [
+          "organization_name",
+          "organization_purpose",
+          "service_url",
+          "official_source"
+        ]
+      }
+    }
+  ]
+}
